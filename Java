@@ -1,0 +1,28 @@
+class Calculator{
+void add( int a,int b){
+    System. out.println(a+b);
+    
+}
+    void sub(int a,int b){
+     System.  out.println(a-b);   
+    }
+    void multi(int a,int b){
+        System.out.println(a*b);
+        
+    }
+    void div(int a,int b){
+        
+        System.out.println(a/b);
+    }
+}
+public class Rumi {
+    public static void main(String[]args){
+        
+        Calculator math = new Calculator();
+        math.add( 13,13);
+        math.sub(10,5);
+        math .multi(6,5);
+        math.div(16,2);
+    }
+    
+}
