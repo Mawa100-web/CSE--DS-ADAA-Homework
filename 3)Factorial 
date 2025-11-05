@@ -17,10 +17,6 @@ return 0;
 
 b)Using recursion 
 
-
-
-
-
    #include <stdio.h>
 
 int factorial(int n) {
