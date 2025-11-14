@@ -18,7 +18,8 @@ int main() {
 
     for(i = 0; i < 5; i++) {
         if(a[i] == key) {
-            printf("Found at position %d\n", i);
+            printf("Found at position %d\n",
+i);
             return 0;
         }
     }
