@@ -1,0 +1,41 @@
+
+
+
+
+2) Implement the binary search algorithm in C/C++:
+          a) Using iteration          b) Using recursion (optional)
+
+
+
+
+
+#include <stdio.h>
+
+int main() {
+    int a[5], key;
+    int low = 0, high = 4, mid;
+
+    printf("Enter 5 numbers (sorted):\n");
+    for(int i = 0; i < 5; i++) {
+        scanf("%d", &a[i]);
+    }
+
+    printf("Enter number to search: ");
+    scanf("%d", &key);
+
+    while(low <= high) {
+        mid = (low + high) / 2;
+
+        if(a[mid] == key) {
+            printf("Found at index %d\n", mid);
+            return 0;
+        }
+        else if(key > a[mid])
+            low = mid + 1;
+        else
+            high = mid - 1;
+    }
+
+    printf("Not found\n");
+    return 0;
+}
